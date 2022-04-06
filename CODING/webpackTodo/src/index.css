@@ -38,11 +38,13 @@
     border: 1px solid #000;
     width: 60%;
     height: 200px;
-    /* overflow:auto; */
+    overflow-y:scroll;
     margin-left: 5%;
     font-size: 20px;
     background-color: #fff;
+    word-wrap: break-word;
 }
+
 
 button {
     width: 50%;
