@@ -17,7 +17,7 @@ function App() {
         <Button />
       </div>
       <div className="card">
-        <h2>Mobile Operating System</h2>
+        <Heading heading="Mobile Operating Systems" />
         <ul>
           {mOS.map((e) => {
             return <List title={e} />;
@@ -25,7 +25,7 @@ function App() {
         </ul>
       </div>
       <div className="card">
-        <h2>Mobile Manufacturers</h2>
+        <Heading heading="Mobile Manufacturers" />
         <ul className="hollow">
           {mMan.map((e) => {
             return <List title={e} />;
@@ -47,6 +47,9 @@ const Button = () => {
 };
 const List = (props) => {
   return <li>{props.title}</li>;
+};
+const Heading = (props) => {
+  return <h2>{props.heading}</h2>;
 };
 
 export default App;
