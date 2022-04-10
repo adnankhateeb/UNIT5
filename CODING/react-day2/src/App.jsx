@@ -22,9 +22,6 @@ function App() {
       setCounter(counter + value);
    };
 
-   if (counter >= 10) {
-      return <h2>You exceeded the maximum value! 😟😟</h2>;
-   }
 
    return (
       // navbar part
