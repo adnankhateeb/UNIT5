@@ -1,33 +1,17 @@
 let v = "eziowiomkvrrdzx";
 let r = "orugiebaolddavd";
 
-let count = 0;
-
-for (let i = 0; i < v.length; i++) {
-   for (let j = 0; j < r.length; j++) {
-      if (v[i] == r[j]) {
-         i = j;
-         count++
-      }
+function fn(v,r,vl,rl){
+   if(vl == 0 || rl  == 0){
+       return 0;
    }
+   
+   if(v[vl-1] == r[rl-1]){
+       return 1 + fn(v, r, vl-1,rl-1)
+   } 
+    return Math.max(fn(v,r,vl-1,rl), fn(v,r,vl,rl-1))
+   
 }
-console.log(count);
-// let v = "eziowiomkvrrdzx";
-// let r = "orugiebaolddavd";
-// // o i o d v
-// let vl = v.length;
-// let rl = r.length;
+console.log(fn(v,r,v.length, r.length))
 
-// let first = 0;
-// let second = 0;
-
-// while(first < vl && second < rl){
-//     if(v[first] == r[second]){
-//         count++;
-//         first++;
-//         second++;
-//     } else{
-
-//     }
-// }
 
