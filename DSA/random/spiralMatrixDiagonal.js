@@ -52,6 +52,10 @@ for (let i = 0; i < mat.length; i++) {
 console.log("leftSum:", leftSum);
 console.log("rightSum:", rightSum);
 let totalSum = 0;
-totalSum = leftSum + rightSum - mat[Math.floor(n / 2)][Math.floor(n / 2)];
-console.log("totalSum:", totalSum)
+if (n % 2 === 0) {
+   totalSum = leftSum + rightSum;
+} else {
+   totalSum = leftSum + rightSum - mat[Math.floor(n / 2)][Math.floor(n / 2)];
+}
+console.log("totalSum:", totalSum);
 console.log("mat:", mat);
