@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+.App *{
+  margin-bottom: 6%;
+  /* font-size: 20px; */
+}
+
+.banner {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.addScore {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button{
+  margin-left: 5%;
+  background-color: red;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+}
