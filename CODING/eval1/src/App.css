@@ -2,7 +2,8 @@
   text-align: center;
 }
 .App *{
-  margin-bottom: 6%;
+  margin-bottom: 3%;
+  font-size: 18px;
   /* font-size: 20px; */
 }
 
